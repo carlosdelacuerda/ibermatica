@@ -1,0 +1,35 @@
+<form>
+    <label  (change)="filter()">Empleados
+        <input id="empleado" type="checkbox" name="Empleados" checked>
+    </label>
+    <label  (change)="filter()">Demandante
+        <input id="demandante" type="checkbox" name="demandante" checked>
+    </label>
+</form>
+<div class="card" style="height: 100px;">
+    <p-table
+    [value]="showUsers" [tableStyle]="{'height': '100px'}">
+        <ng-template pTemplate="header">
+            <tr>
+                <th scope="col">Tipo</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">1er apellido</th>
+                <th scope="col">2do apellido</th>
+                <th scope="col">Fecha de nacimiento</th>
+                <th scope="col">Ver/editar</th>
+                <th scope="col">Borrar</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-user let-rowIndex="rowIndex">
+            <tr class="card flex flex-wrap gap-3">
+                <td>{{user.tipo}}</td>
+                <td>{{user.datosPersonales.Nombre}}</td>
+                <td>{{user.datosPersonales.Apellido1}}</td>
+                <td>{{user.datosPersonales.Apellido2}}</td>
+                <td>{{user.datosPersonales.FechaDeNacimiento}}</td>
+                <td><i [routerLink]="['/detail', user.id]"  class="pi pi-file-edit"></i></td>
+                <td><i (click)="remove(user.id)" class="pi pi-trash"></i></td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>

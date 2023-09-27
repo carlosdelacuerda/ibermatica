@@ -1,0 +1,9 @@
+<a [routerLink]="['/list']">< Volver al listado</a>
+<div>
+    <span (click)="navigate(1)">Datos</span>
+    <span (click)="navigate(2)">Direccion</span>
+    <span (click)="navigate(3)">Estudios</span>
+</div>
+<app-datos *ngIf="datos" [user]="user?.datosPersonales!"></app-datos>
+<app-direccion *ngIf="direccion"></app-direccion>
+<app-estudios *ngIf="estudios"></app-estudios>

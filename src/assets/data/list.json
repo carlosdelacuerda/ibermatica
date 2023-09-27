@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "tipo": "demandante",
+    "datosPersonales": {
+      "NIF": "123",
+      "Nombre": "Carlos",
+      "Apellido1": "Gomez",
+      "Apellido2": "Sanchez",
+      "Genero": "M",
+      "FechaDeNacimiento": "Sep 27 2023"
+    },
+    "Direccion": {
+      "Calle": "gran via",
+      "Numero": 1,
+      "Puerta": "A",
+      "CodigoPostal": 22222,
+      "Ciudad": "Valencia"
+    },
+    "Estudios": {
+      "NombreInstitucion": "Instituto",
+      "Titulacion": "Master",
+      "Fecha": "Sep 27 2023"
+    }
+  },
+  {
+    "id": 2,
+    "tipo": "empleado",
+    "datosPersonales": {
+      "NIF": "123",
+      "Nombre": "Manuel",
+      "Apellido1": "Gomez",
+      "Apellido2": "Sanchez",
+      "Genero": "M",
+      "FechaDeNacimiento": "Sep 27 2023"
+    },
+    "Direccion": {
+      "Calle": "gran via",
+      "Numero": 1,
+      "Puerta": "A",
+      "CodigoPostal": 22222,
+      "Ciudad": "Valencia"
+    },
+    "Estudios": {
+      "NombreInstitucion": "Instituto",
+      "Titulacion": "Master",
+      "Fecha": "Sep 27 2023"
+    }
+  }
+
+  
+]

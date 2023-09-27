@@ -1,0 +1,29 @@
+<h2>Datos personales</h2>
+<form class="wrapper">
+    <div>
+        <label>NIF</label>
+        <input [value]="user?.NIF!">
+    </div>
+    <div>
+        <label>Nombre</label>
+        <input [value]="user?.Nombre!">
+    </div>
+    <div>
+        <label>1er apellido</label>
+        <input [value]="user?.Apellido1!">
+    </div>
+    <div>
+        <label>2do apellido</label>
+        <input [value]="user?.Apellido2!">
+    </div>
+    <div>
+        <label>Gen</label>
+        <input [value]="user?.Genero!">
+    </div>
+    <div>
+        <label>Direcc</label>
+        <input [value]="user?.FechaDeNacicmiento!">
+    </div>
+</form>
+
+<p-button label="Guardar"></p-button>
