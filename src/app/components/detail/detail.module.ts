@@ -6,6 +6,7 @@ import { DireccionComponent } from './direccion/direccion.component';
 import { EstudiosComponent } from './estudios/estudios.component';
 import { ButtonModule } from 'primeng/button';
 import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     ButtonModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
   ],
   exports: [
     DetailContainerComponent
